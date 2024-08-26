@@ -13,3 +13,14 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     })
 });
+
+var registroForm = document.getElementById("registroForm");
+if(registroForm){
+    registroForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    var newUser = document.getElementById("newUser").value;
+    var newPassword = document.getElementById("newPassword").value;
+    alert("Usuario registrado" + new newUser);
+    window.location.href = "index.html"
+    })
+}
